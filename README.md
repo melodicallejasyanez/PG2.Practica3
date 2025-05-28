@@ -103,7 +103,7 @@ Si el usuario pregunta por formas de manejar la ansiedad, el chatbot consulta es
 
 **Solicitud:**
 ```sh
-GET /api/intervenciones/?estrategia=ansiedad
+GET /api/intervenciones/?diagnostico=ansiedad
 ```
 
 **Respuesta:**
@@ -154,7 +154,7 @@ GET /api/apoyos/?tipos=ansiedad
 ### Síntomas (`SintomasSerializer`)
 
 **Ejemplo de uso:**  
-Si el usuario menciona ciertos síntomas, el chatbot devuelve una lista de características y posibles factores que los desencadenan.
+Si el usuario menciona ciertos síntomas o terminos clave, el chatbot devuelve una lista de características y posibles factores que los desencadenan.
 
 **Solicitud:**
 ```sh
