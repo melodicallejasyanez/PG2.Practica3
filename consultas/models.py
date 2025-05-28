@@ -9,8 +9,8 @@ class Diagnostico(models.Model):
     nombre = models.CharField(max_length=100)
     descripcion = models.TextField()
     edad = models.IntegerField()
-    sintomas = models.ForeignKey(Sintomas, on_delete=models.CASCADE, related_name='diagnosticos')
-
+    #sintomas = models.ForeignKey(Sintomas, on_delete=models.CASCADE, related_name='diagnosticos')
+    sintomas = models.ManyToManyField(Sintomas, related_name='diagnosticos')
 class Intervencion(models.Model):
     descripcion = models.TextField()
     estrategia = models.TextField()
